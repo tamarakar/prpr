@@ -1,0 +1,27 @@
+[
+	{
+		"url": "http://myapi/api/returnnumber/3125",
+		"response": { "result": "три тысячи сто двадцать пять" },
+		"method": "GET"
+	},
+		{
+		"url": "http://myapi/api/returnday?date=27.05.2019",
+		"response": { "result": "Понедельник" },
+		"method": "GET"
+	},
+	{
+		"url": "http://myapi/api/regionRussia/72",
+		"response": { "result": "Тюменская область" },
+		"method": "GET"
+	},
+	{
+		"url": "http://myapi/api/fibonacci/10",
+		"response": { "result": "55" },
+		"method": "GET"
+	},
+	{
+		"url": "http://myapi/api/quadraticEquation?a=3&b=2&c=-15",
+		"response": { "result": "Корни уравнения равны: 1.927333333333 и -2.594" },
+		"method": "GET"
+	},
+]
