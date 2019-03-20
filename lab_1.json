@@ -1,11 +1,11 @@
 [
 	{
-		"url": "http://myapi/api/returnnumber/3125",
+		"url": "http://myapi/api/numtostr/3125",
 		"response": { "result": "три тысячи сто двадцать пять" },
 		"method": "GET"
 	},
 		{
-		"url": "http://myapi/api/returnday?date=27.05.2019",
+		"url": "http://myapi/api/daybydate?date=27.05.2019",
 		"response": { "result": "Понедельник" },
 		"method": "GET"
 	},
