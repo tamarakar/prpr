@@ -14,7 +14,7 @@ function generateResponse($request, $data){
 	];
 }
 
-$app->get('/api/returnnumber/{number}', function(Request $request, Response $response, array $args){
+$app->get('/api/numtostr/{number}', function(Request $request, Response $response, array $args){
 	$number = $args['number'];
 	$data = array('result' => num2str($number , null));
     return $response->withJson(generateResponse($request, $data));
@@ -48,7 +48,7 @@ $app->get('/api/quadraticEquation', function(Request $request, Response $respons
     return $response->withJson(generateResponse($request, $data));
 });
 
-$app->get('/api/returnday', function(Request $request, Response $response, array $args){
+$app->get('/api/daybydate', function(Request $request, Response $response, array $args){
 	$allParams = $request->getQueryParams();
 	$date = $allParams['date'];
 
