@@ -1,0 +1,121 @@
+[
+	{
+		"url": "http://laravel/api/v2/clients",
+		"response": [
+					    {
+					        "id": 1,
+					        "name": "Иванов Иван"
+					    },
+					    {
+					        "id": 2,
+					        "name": "Петров Петр"
+					    }
+					],
+		"method": "GET"
+	},
+	{
+		"url": "http://laravel/api/v2/services",
+		"response": [
+					    {
+					        "id": 1,
+					        "name": "Ремонт электроники"
+					    },
+					    {
+					        "id": 2,
+					        "name": "Ремонт сантехники"
+					    }
+					],
+		"method": "GET"
+	},
+	{
+		"url": "http://laravel/api/v2/requests",
+		"response": [
+					    {
+					        "id": 1,
+					        "client_id": 1,
+					        "service_id": 2,
+					        "client": {
+					            "id": 1,
+					            "name": "Иванов Иван"
+					        },
+					        "service": {
+					            "id": 2,
+					            "name": "Ремонт сантехники"
+					        }
+					    },
+					    {
+					        "id": 2,
+					        "client_id": 1,
+					        "service_id": 1,
+					        "client": {
+					            "id": 1,
+					            "name": "Филиппова Анна Валерьевна"
+					        },
+					        "service": {
+					            "id": 1,
+					            "name": "Ремонт электроники"
+					        }
+					    },
+					    {
+					        "id": 3,
+					        "client_id": 2,
+					        "service_id": 2,
+					        "client": {
+					            "id": 2,
+					            "name": "Филиппова Анна"
+					        },
+					        "service": {
+					            "id": 2,
+					            "name": "Ремонт сантехники"
+					        }
+					    }
+					],
+		"method": "GET"
+	},
+	{
+		"url": "http://laravel/api/v2/clients?name=Филиппова Анна",
+		"response": { "result": "Запись добавлена" },
+		"method": "POST"
+	},
+	{
+		"url": "http://laravel/api/v2/services?name=Ремонт сантехники",
+		"response": { "result": "Запись добавлена" },
+		"method": "POST"
+	},
+	{
+		"url": "http://laravel/api/v2/requests?client_id=2&service_id=3",
+		"response": { "result": "Запись добавлена" },
+		"method": "POST"
+	},
+	{
+		"url": "http://laravel/api/v2/clients/1?name=Петров Петр",
+		"response": { "result": "Запись обновлена" },
+		"method": "PUT"
+	},
+	{
+		"url": "http://laravel/api/v2/services/3?name=Ремонт сантехники",
+		"response": { "result": "Запись обновлена" },
+		"method": "PUT"
+	},
+	{
+		"url": "http://laravel/api/v2/requests/1?client_id=1&service_id=2",
+		"response": { "result": "Запись обновлена" },
+		"method": "PUT"
+	},
+	{
+		"url": "http://laravel/api/v2/clients/5",
+		"response": { "result": "Запись удалена" },
+		"method": "DELETE"
+	},
+	{
+		"url": "http://laravel/api/v2/services/3",
+		"response": { "result": "Запись удалена" },
+		"method": "DELETE"
+	},
+	{
+		"url": "http://laravel/api/v2/requests/1",
+		"response": { "result": "Запись удалена" },
+		"method": "DELETE"
+	},
+
+]
