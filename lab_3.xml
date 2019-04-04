@@ -1,0 +1,102 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+
+    <GetClientsResponse xmlns="http://tempuri.org/">
+      <GetClientsResult xmlns:a="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Client>
+          <a:ClientId>1</a:ClientId>
+          <a:name>Петренко Петр</a:name>
+        </a:Client>
+        <a:Client>
+          <a:ClientId>2</a:ClientId>
+          <a:name>Рыжков Костя</a:name>
+        </a:Client>
+        <a:Client>
+          <a:ClientId>4</a:ClientId>
+          <a:name>Олег Евгеньев</a:name>
+        </a:Client>
+      </GetClientsResult>
+    </GetClientsResponse>
+
+    <GetServicesResponse xmlns="http://tempuri.org/">
+      <GetServicesResult xmlns:a="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Service>
+          <a:ServiceId>1</a:ServiceId>
+          <a:name>Уборка в номере</a:name>
+        </a:Service>
+        <a:Service>
+          <a:ServiceId>2</a:ServiceId>
+          <a:name>Заказ напитков</a:name>
+        </a:Service>
+      </GetServicesResult>
+    </GetServicesResponse>
+
+    <GetRequestsResponse xmlns="http://tempuri.org/">
+      <GetRequestsResult xmlns:a="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Request>
+          <a:ClientId>1</a:ClientId>
+          <a:RequestId>1</a:RequestId>
+          <a:ServiceId>2</a:ServiceId>
+        </a:Request>
+        <a:Request>
+          <a:ClientId>1</a:ClientId>
+          <a:RequestId>2</a:RequestId>
+          <a:ServiceId>1</a:ServiceId>
+        </a:Request>
+        <a:Request>
+          <a:ClientId>2</a:ClientId>
+          <a:RequestId>3</a:RequestId>
+          <a:ServiceId>2</a:ServiceId>
+        </a:Request>
+      </GetRequestsResult>
+    </GetRequestsResponse>
+
+    <GetClientResponse xmlns="http://tempuri.org/">
+      <GetClientResult xmlns:a="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:ClientId>1</a:ClientId>
+        <a:name>Петренко Петр</a:name>
+      </GetClientResult>
+    </GetClientResponse>
+
+    <GetServiceResponse xmlns="http://tempuri.org/">
+      <GetServiceResult xmlns:a="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:ServiceId>1</a:ServiceId>
+        <a:name>Уборка в номере</a:name>
+      </GetServiceResult>
+    </GetServiceResponse>
+
+    <GetRequestResponse xmlns="http://tempuri.org/">
+      <GetRequestResult xmlns:a="http://schemas.datacontract.org/2004/07/lab3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:ClientId>1</a:ClientId>
+        <a:RequestId>1</a:RequestId>
+        <a:ServiceId>2</a:ServiceId>
+      </GetRequestResult>
+    </GetRequestResponse>
+
+    <AddClientResponse xmlns="http://tempuri.org/">
+      <AddClientResult>5</AddClientResult>
+    </AddClientResponse>
+
+    <AddServiceResponse xmlns="http://tempuri.org/">
+      <AddServiceResult>3</AddServiceResult>
+    </AddServiceResponse>
+
+    <AddRequestResponse xmlns="http://tempuri.org/">
+      <AddRequestResult>7</AddRequestResult>
+    </AddRequestResponse>
+
+    <DeleteClientResponse xmlns="http://tempuri.org/">
+      <DeleteRequestResult>1</DeleteRequestResult>
+    </DeleteClientResponse>
+
+    <DeleteServiceResponse xmlns="http://tempuri.org/">
+      <DeleteRequestResult>1</DeleteRequestResult>
+    </DeleteServiceResponse>
+
+    <DeleteRequestResponse xmlns="http://tempuri.org/">
+      <DeleteRequestResult>1</DeleteRequestResult>
+    </DeleteRequestResponse>
+
+  </s:Body>
+</s:Envelope>
