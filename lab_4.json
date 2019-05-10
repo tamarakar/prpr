@@ -1,0 +1,7 @@
+[	
+	{
+	"url": "http://practice/api/v2.0/modifiedString",
+	"response": { "result": "molodez,_vozmi_s_polki_piroshok" },
+	"method": "GET"
+	}
+]
